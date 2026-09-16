@@ -1,0 +1,200 @@
+@media (max-width: 767px) {
+    .home {
+        min-height: auto;
+    }
+
+    .home .navbar nav {
+        padding: 1.2rem 1rem;
+    }
+
+    .home .logo {
+        font-size: 21px;
+    }
+
+    .home .navbar .nav-links i {
+        display: block;
+    }
+
+    .home .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 15px);
+        width: 200px;
+        background-color: rgba(255, 255, 255);
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    .home .navbar .nav-links:hover ul {
+        display: flex;
+    }
+
+    .home .navbar .nav-links ul::before {
+        display: block;
+    }
+
+    .nav-links ul li a {
+        display: block;
+        padding: 15px;
+    }
+
+    .nav-links ul li a:hover {
+        padding-left: 25px;
+    }
+
+    .home .header-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 10rem;
+        padding-bottom: 4rem;
+        min-height: auto;
+    }
+
+    .home .header-content .content-text {
+        margin-bottom: 2rem;
+    }
+
+    .home .header-content .desc {
+        margin: auto;
+    }
+
+    .home .header-content .hero-img {
+        width: 350px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .home .header-content .hero-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* About*/
+    .about .about-content {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    /* Skills*/
+    .skills .skills-content .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Services*/
+    .services .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Portfolio*/
+    .portfolio .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .portfolio .row .item>img {
+        height: 190px;
+    }
+
+    /* Contact*/
+    .contact .row {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .contact .row img {
+        max-width: 280px;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 528px) {
+
+    .container {
+        padding: 0 1.2rem;
+    }
+
+    .home .navbar nav {
+        padding: 1rem 0.8rem;
+    }
+
+    .home .logo {
+        font-size: 19px;
+    }
+
+    .home .header-content {
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+    }
+
+    .home .header-content h1 {
+        font-size: 32px;
+    }
+
+    .home .header-content p span,
+    .home .header-content .title {
+        font-size: 15px;
+    }
+
+    .home .header-content .desc {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .home .header-content .hero-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about h2,
+    .skills h2,
+    .services h2,
+    .portfolio h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    /* About*/
+    .about .about-content .col-1 h3 {
+        font-size: 20px;
+    }
+
+    .about .about-content .col-1 p,
+    .about .about-content .col-2 p {
+        font-size: 13px;
+    }
+
+
+    .skills .skills-content .row,
+    .services .row{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Portfolio */
+    .portfolio .row {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio .row .item>img {
+        height: 210px;
+    }
+
+    /* Contact*/
+    .contact .row {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .contact .row img {
+        max-width: 220px;
+    }
+
+    /* Footer */
+    footer p,
+    .footer p {
+        font-size: 11px;
+    }
+}
